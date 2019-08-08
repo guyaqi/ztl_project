@@ -208,7 +208,7 @@
     #GameView {
         height: 100vh;
         overflow: auto;
-        background-color: saddlebrown;
+        background-color: darkslategrey;
     }
     .text {
         margin: .25rem;

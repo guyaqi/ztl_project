@@ -1,6 +1,6 @@
 <template>
     <div v-if="!used">
-        <button v-for="item in choices" v-bind:key="item.id" @click.stop="action(item.id)">{{item.text}}</button>
+        <button v-for="item in choices" v-bind:key="item.value" @click.stop="action(item.value)">{{item.text}}</button>
     </div>
 </template>
 
