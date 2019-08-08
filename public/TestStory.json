@@ -1,0 +1,55 @@
+{
+    "name":"测试剧情",
+    "scripts": [
+        {
+            "type": "start"
+        },
+        {
+            "type": "dialog",
+            "role": "",
+            "msg" : "一觉醒来，钟天乐觉得自己的头部异常沉重。"
+        },
+        {
+            "type": "dialog",
+            "role": "",
+            "msg" : "四处观望，周围一片漆黑。"
+        },
+        {
+            "type": "dialog",
+            "role": "钟天乐",
+            "msg" : "我这是在哪。。。"
+        },
+        {
+            "type": "choose",
+            "value": "wait",
+            "choice":[
+                "探索周围环境",
+                "静静等待"
+            ]
+        },
+        {
+            "type": "check",
+            "value": "wait",
+            "branch":[
+                {},
+                {"jump": 8}
+            ]
+        },
+        {
+            "type": "dialog",
+            "role": "",
+            "msg" : "你触电了。"
+        },
+        {
+            "type": "end"
+        },
+        {
+            "type": "dialog",
+            "role": "",
+            "msg" : "经过了漫长的等待，营救你的人到了。"
+        },
+        {
+            "type": "end"
+        }
+    ]
+}
