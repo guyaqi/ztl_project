@@ -1,0 +1,72 @@
+{
+  "name":"钟天乐逃亡记",
+  "notes": [
+    {
+      "id": 0,
+      "type": "start"
+    },
+    {
+      "id": 1,
+      "type": "dialog",
+      "role": "",
+      "msg" : "一觉醒来，钟天乐感受到了头部的剧烈疼痛。"
+    },
+    {
+      "id": 2,
+      "type": "dialog",
+      "role": "",
+      "msg" : "四处观望，周围一片漆黑。"
+    },
+    {
+      "id": 3,
+      "type": "dialog",
+      "role": "钟天乐",
+      "msg" : "我这是在哪。。。"
+    },
+    {
+      "id": 4,
+      "type": "choose",
+      "variable": "wait",
+      "choices":[
+        {
+          "value": 0,
+          "text": "探索周围环境"
+        },
+        {
+          "value": 1,
+          "text": "静静等待"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "branch",
+      "variable": "wait",
+      "branches":[
+        6,
+        8
+      ]
+    },
+    {
+      "id": 6,
+      "type": "dialog",
+      "role": "",
+      "msg" : "你摸到了破损的电线"
+    },
+    {
+      "type": "end",
+      "msg" : "死于触电"
+    },
+    {
+      "id": 7,
+      "type": "dialog",
+      "role": "",
+      "msg" : "经过了漫长的等待，你的意识逐渐模糊。"
+    },
+    {
+      "id": 8,
+      "type": "end",
+      "msg" : "你饿死了"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "list": [
+    {
+      "name": "钟天乐逃亡记",
+      "path": "./stories/Escape.json"
+    },
+    {
+      "name": "测试剧情",
+      "path": "./stories/Another.json"
+    }
+  ]
+}

@@ -7,7 +7,7 @@
                 <Choose v-else-if="item.type==='choose'" :choices="item.choices" :values="variableList" :value="item.variable" :callback="chooseHandler"></Choose>
 
 
-            <div class="mask" v-if="end">
+            <div class="mask" @click.stop="restart" v-if="end">
                 <p class="title">游戏结束</p>
                 <p class="sub">{{endText}}</p>
             </div>
@@ -29,6 +29,10 @@
             Dialog
         },
 
+        props: [
+            "path"
+        ],
+
         data: function () {
             return {
                 gameName: "",
@@ -41,7 +45,8 @@
             }
         },
         mounted: function() {
-            fetch("./TestStory.json")
+            console.log(this.path);
+            fetch(this.path)
                 .then(response => response.json())
                 .then(res => {
 
@@ -56,6 +61,17 @@
                 console.log("now -> " + this.now);
                 const current = this.notes[this.now];
                 console.log(JSON.stringify(current))
+            },
+
+            restart: function () {
+                this.variableList = {};
+                this.renderStack = [];
+                this.now = 0;
+                this.end = false;
+                this.endText = "";
+
+                this.process();
+
             },
 
             process: function () {
