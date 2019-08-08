@@ -1,55 +1,72 @@
 {
     "name":"测试剧情",
-    "scripts": [
+    "notes": [
         {
+            "id": 0,
             "type": "start"
         },
         {
+            "id": 1,
             "type": "dialog",
             "role": "",
             "msg" : "一觉醒来，钟天乐觉得自己的头部异常沉重。"
         },
         {
+            "id": 2,
             "type": "dialog",
             "role": "",
             "msg" : "四处观望，周围一片漆黑。"
         },
         {
+            "id": 3,
             "type": "dialog",
             "role": "钟天乐",
             "msg" : "我这是在哪。。。"
         },
         {
+            "id": 4,
             "type": "choose",
-            "value": "wait",
-            "choice":[
-                "探索周围环境",
-                "静静等待"
+            "variable": "wait",
+            "choices":[
+                {
+                    "id": 0,
+                    "text": "探索周围环境"
+                },
+                {
+                    "id": 1,
+                    "text": "静静等待"
+                }
             ]
         },
         {
-            "type": "check",
-            "value": "wait",
-            "branch":[
-                {},
-                {"jump": 8}
+            "id": 5,
+            "type": "branch",
+            "variable": "wait",
+            "branches":[
+                6,
+                8
             ]
         },
         {
+            "id": 6,
             "type": "dialog",
             "role": "",
             "msg" : "你触电了。"
         },
         {
-            "type": "end"
+            "type": "end",
+            "msg" : "死于触电"
         },
         {
+            "id": 7,
             "type": "dialog",
             "role": "",
             "msg" : "经过了漫长的等待，营救你的人到了。"
         },
         {
-            "type": "end"
+            "id": 8,
+            "type": "end",
+            "msg" : "你得救了"
         }
     ]
 }
