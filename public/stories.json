@@ -1,17 +1,17 @@
 {
   "list": [
     {
+      "name": "手撕日记之哲学比利",
+      "path": "./stories/XiaoFu.json"
+    },
+    {
       "name": "钟天乐逃亡记",
       "path": "./stories/Escape.json"
     },
     {
       "name": "测试剧情",
       "path": "./stories/Another.json"
-    },
-    {
-      "name": "手撕日记之哲学比利",
-      "path": "./stories/XiaoFu.json"
     }
-    
+
   ]
 }

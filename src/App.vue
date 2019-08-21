@@ -52,7 +52,11 @@ export default {
         box-sizing: border-box;
         user-select: none;
     }
+    html {
+        height:auto;
+    }
     body {
+        height:auto;
         margin: 0;
     }
     #app {

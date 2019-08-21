@@ -12,6 +12,7 @@
                 <p class="sub">{{endText}}</p>
             </div>
         </div>
+        <div id="game"></div>
     </div>
 </template>
 
@@ -136,7 +137,11 @@
 
 
             clickHandler: function() {
+                
                 const current = this.notes[this.now];
+                if(current.id > 8) {
+                    location.href = "#game"
+                }
                 switch(current.type) {
                     case "dialog":
                         this.requireNext();
@@ -222,9 +227,11 @@
 
 <style scoped>
     #GameView {
-        height: 100vh;
-        overflow: auto;
         background-color: darkslategrey;
+        height:100vh;
+    }
+    #game {
+        height:200px;
     }
     .text {
         margin: .25rem;
