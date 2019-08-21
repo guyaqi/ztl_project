@@ -1,0 +1,334 @@
+{
+    "name":"手撕日记之哲学比利",
+    "notes": [
+      {
+        "id": 0,
+        "type": "start"
+      },
+      {
+        "id": 1,
+        "type": "dialog",
+        "role": "",
+        "msg" : "小伏早上起来，发现手机里多出了30多条消息。"
+      },
+      {
+        "id": 2,
+        "type": "dialog",
+        "role": "小伏",
+        "msg" : "是谁啊。。。有病吗。。。"
+      },
+      {
+        "id": 3,
+        "type": "choose",
+        "variable": "sleep",
+        "choices":[
+          {
+            "value": 0,
+            "text": "继续睡觉"
+          },
+          {
+            "value": 1,
+            "text": "查看消息"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "type": "branch",
+        "variable": "sleep",
+        "branches":[
+          5,
+          7
+        ]
+      },
+      {
+        "id": 5,
+        "type": "dialog",
+        "role": "",
+        "msg" : "你在梦里被比利♂了"
+      },
+      {
+        "id": 6,
+        "type": "end",
+        "msg" : "你变成了受"
+      },
+      {
+        "id": 7,
+        "type": "dialog",
+        "role": "小伏",
+        "msg" : "小姐姐居然回我消息了。"
+      },
+      {
+        "id": 8,
+        "type": "dialog",
+        "role": "",
+        "msg" : "小伏和小姐姐开始聊天"
+      },
+      {
+        "id": 9,
+        "type": "dialog",
+        "role": "小伏",
+        "msg" : "你怎么啦，昨天心情不好吗"
+      },
+      {
+        "id": 10,
+        "type": "dialog",
+        "role": "小姐姐",
+        "msg" : "没事。最近亲戚串门，我一会要去黄旗超市买点东西去，先不跟你聊了。"
+      },
+      {
+        "id": 11,
+        "type": "dialog",
+        "role": "小伏",
+        "msg" : "咦？我家也在黄旗超市附近，要不我陪你一起去。"
+      },
+      {
+        "id": 12,
+        "type": "dialog",
+        "role": "",
+        "msg" : "小伏在超市门口碰见了小姐姐，一起进了超市。"
+      },
+      {
+        "id": 13,
+        "type": "dialog",
+        "role": "小姐姐",
+        "msg" : "对了，你是来买什么的呀"
+      },
+      {
+        "id": 14,
+        "type": "choose",
+        "variable": "buywhat",
+        "choices":[
+          {
+            "value": 0,
+            "text": "我来买黄瓜"
+          },
+          {
+            "value": 1,
+            "text": "我来买黄瓜味的乐事"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "type": "branch",
+        "variable": "buywhat",
+        "branches":[
+          16,
+          19
+        ]
+      },
+      {
+        "id": 16,
+        "type": "dialog",
+        "role": "小姐姐",
+        "msg" : "噫！"
+      },
+      {
+        "id": 17,
+        "type": "dialog",
+        "role": "",
+        "msg" : "你被小姐姐嫌弃了"
+      },
+      {
+        "id": 18,
+        "type": "end",
+        "msg" : "被嫌弃了"
+      },
+      {
+        "id": 19,
+        "type": "dialog",
+        "role": "小姐姐",
+        "msg" : "原来你也喜欢黄瓜味的薯片啊！真巧"
+      },
+      {
+        "id": 20,
+        "type": "dialog",
+        "role": "",
+        "msg" : "买完东西，小姐姐突然感觉很不舒服。就让小伏送她回家。"
+      },
+      {
+        "id": 21,
+        "type": "dialog",
+        "role": "",
+        "msg" : "小伏和小姐姐一起走到了附近的一个小区。到了楼下，小姐姐觉得身体不舒服更严重了。"
+      },
+      {
+        "id": 22,
+        "type": "choose",
+        "variable": "leave",
+        "choices":[
+          {
+            "value": 0,
+            "text": "坚持去照顾小姐姐"
+          },
+          {
+            "value": 1,
+            "text": "感觉不太方便，还是走吧"
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "type": "branch",
+        "variable": "leave",
+        "branches":[
+          27,
+          24
+        ]
+      },
+      {
+        "id": 24,
+        "type": "dialog",
+        "role": "",
+        "msg" : "小姐姐突然倒在了地上。这一幕被路上的人看见了。"
+      },
+      {
+        "id": 25,
+        "type": "dialog",
+        "role": "路人",
+        "msg" : "呵。渣男。"
+      },
+      {
+        "id": 26,
+        "type": "end",
+        "msg" : "被鄙视了"
+      },
+      {
+        "id": 27,
+        "type": "dialog",
+        "role": "小伏",
+        "msg" : "你这个样子一个人怎么行呢，我来照顾你吧。"
+      },
+      {
+        "id": 28,
+        "type": "dialog",
+        "role": "",
+        "msg" : "小伏扶着小姐姐上楼了。"
+      },
+      {
+        "id": 29,
+        "type": "dialog",
+        "role": "",
+        "msg" : "回到小姐姐家中后，小伏发现房间里有意外的动静。"
+      },
+      {
+        "id": 30,
+        "type": "dialog",
+        "role": "小伏",
+        "msg" : "房间里有动静，我方便去看看吗"
+      },
+      {
+        "id": 31,
+        "type": "dialog",
+        "role": "小姐姐",
+        "msg" : "没关系，去吧"
+      },
+      {
+        "id": 32,
+        "type": "dialog",
+        "role": "",
+        "msg" : "打开房门，发现两个男人竟裸身在床上撕扯，小伏摸着自己的腰想到自己昨天的疼懂，似乎已经意识到了这一切"
+      },
+      {
+        "id": 33,
+        "type": "dialog",
+        "role": "小姐姐",
+        "msg" : "小伏，我们走错了房间。。。"
+      },
+      {
+        "id": 34,
+        "type": "dialog",
+        "role": "",
+        "msg" : "回到正确的房间后，小伏准备好红糖水和暖宝宝，给了小姐姐，但是楼上的震动依旧没有小。"
+      },
+      {
+        "id": 35,
+        "type": "dialog",
+        "role": "小姐姐",
+        "msg" : "你先出去吧，让我呆会"
+      },
+      {
+        "id": 36,
+        "type": "dialog",
+        "role": "",
+        "msg" : "小伏出去之后，心里的感觉久久不能平息，决定在再到楼上一探究竟。"
+      },
+      {
+        "id": 37,
+        "type": "dialog",
+        "role": "",
+        "msg" : "回到之前的房间，发现有一个人无力地躺在床上，而另外一个人正在提裤子。"
+      },
+      {
+        "id": 38,
+        "type": "dialog",
+        "role": "",
+        "msg" : "眨眼间，提裤子的男人闪身来到了小伏的背后。"
+      },
+      {
+        "id": 39,
+        "type": "dialog",
+        "role": "？",
+        "msg" : "男人，你成功挑起了我的兴趣。"
+      },
+      {
+        "id": 40,
+        "type": "choose",
+        "variable": "fight",
+        "choices":[
+          {
+            "value": 0,
+            "text": "反抗"
+          },
+          {
+            "value": 1,
+            "text": "顺从"
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "type": "branch",
+        "variable": "fight",
+        "branches":[
+          42,
+          46
+        ]
+      },
+      {
+        "id": 42,
+        "type": "dialog",
+        "role": "",
+        "msg" : "小伏大吃一惊，抓住身后的手臂就是一记过肩摔，把那个男人摔到了床上。"
+      },
+      {
+        "id": 43,
+        "type": "dialog",
+        "role": "小伏",
+        "msg" : "哼！谁是猎物还说不定呢。"
+      },
+      {
+        "id": 44,
+        "type": "dialog",
+        "role": "",
+        "msg" : "说着，小伏把人按到了床上。"
+      },
+      {
+        "id": 45,
+        "type": "end",
+        "msg" : "你成为了攻(Good Ending)"
+      },
+      {
+        "id": 46,
+        "type": "dialog",
+        "role": "",
+        "msg" : "你被按到了床上，菊花受尽凌辱。"
+      },
+      {
+        "id": 47,
+        "type": "end",
+        "msg" : "你变成了受。"
+      },
+    ]
+  }

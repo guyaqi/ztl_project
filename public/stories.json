@@ -7,6 +7,11 @@
     {
       "name": "测试剧情",
       "path": "./stories/Another.json"
+    },
+    {
+      "name": "手撕日记之哲学比利",
+      "path": "./stories/XiaoFu.json"
     }
+    
   ]
 }
